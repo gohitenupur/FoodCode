@@ -1,6 +1,3 @@
-# project
-This is a food delivery app with MERN Technology 
-
 
 // download ->
 // mongoDB community server

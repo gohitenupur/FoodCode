@@ -1,0 +1,35 @@
+.navbar {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+
+.btn-comman {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-left: 1rem;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.btn-comman:hover
+ {
+  background-color: #fff;
+  color: black;
+  text-decoration: none;
+}

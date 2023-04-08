@@ -1,0 +1,55 @@
+.my-card {
+    background-color: #f7f7f7;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 18rem;
+    max-width:350px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+  }
+  
+  .my-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .btn-in {
+    font-size: 1.5rem;
+    height: 2.5rem;
+    width: 1.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    margin-right: 0.3rem;
+  }
+  .text {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    min-width: 2rem;
+    text-align: center;
+  }
+  .selected {
+    height: 2.5rem;
+    padding: 0.25rem;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    margin-right: 0.5rem;
+  }
+  
+  .display-inline {
+    display: inline-block;
+  }
+  
+  

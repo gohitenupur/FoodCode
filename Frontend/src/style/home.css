@@ -1,0 +1,71 @@
+/* Style for the container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+
+/* Style for the row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* Style for the category name */
+.category-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style for the hr */
+.hr {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* Style for the card component */
+.my-card {
+  width: 300px;
+  margin: 15px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* Style for the card title */
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style for the card text */
+.card-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Style for the card button */
+.card-button {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+/* Style for the card button on hover */
+.card-button:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
