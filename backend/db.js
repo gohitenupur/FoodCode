@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
 
 const mongoDB = () => {
+  
   mongoose
-    .connect(process.env.BASE_URL)
+    .connect(process.env.BASE_URL, {useNewUrlParser: true,
+      useUnifiedTopology: true})
     .then(() => {
       console.log("Database connected successfully");
       const foodDataPromise = mongoose
