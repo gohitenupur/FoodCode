@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm i",
     "dev": "nodemon index",
-    "start": "node ./index.js"
+    "start": "node index"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +19,6 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.1",
     "nodemon": "^2.0.21"
-  }
+  },
+  "devDependencies": {}
 }
