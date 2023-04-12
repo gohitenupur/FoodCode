@@ -19,8 +19,8 @@ const mongoDB = () => {
         .then(([foodData, foodCategory]) => {
           global.foodData = foodData;
           global.foodCategory = foodCategory;
-          // console.log("Food data:", global.foodData);
-          // console.log("Food category:", global.foodCategory);
+          console.log("Food data:", global.foodData);
+          console.log("Food category:", global.foodCategory);
         })
         .catch((error) => {
           console.log("Error while fetching data:", error);
