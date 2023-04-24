@@ -1,7 +1,12 @@
 
-// download ->
-// mongoDB community server
-// mongo database tool shell
-// import foodCategery.json and food data.json to mongoDB community server
+<h1>This is a Food delivery project with MERN Technology <h1>
 
-<!-- //`npm i bcryptjs jsonwebtoken` install -->
+<h2>Tech stack  - </h2>
+<ul>
+<li>React.js</li>
+<li>Node.js</li>
+<li>Bootstrap</li>
+<li>Mongoose</li>
+<li>Express</li>
+<li>MongoDB</li>
+</ul>
