@@ -8,6 +8,10 @@ import { CartProvider } from "./components/ContextReuser";
 import MyOrder from "./screens/MyOrder";
 
 function App() {
+
+
+
+
   return (
     <CartProvider>
       <Router>
@@ -16,7 +20,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/signup" element={<Signup />} />
-            <Route exact path="/my-order" element={<MyOrder />} />
+            <Route exact path="/my-order" element={<MyOrder /> } />
           </Routes>
         </div>
       </Router>

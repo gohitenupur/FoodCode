@@ -1,16 +1,23 @@
 import React, { useState } from "react";
 import { Button, Container, Form } from "react-bootstrap";
-import { Link ,useNavigate } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
+
+
+
 
 function Login() {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
 
   const navigate=useNavigate();
+  
+
+  
+  
 
   const handleSubmit=async(e)=>{
     e.preventDefault();
 
-    console.log(JSON.stringify({email:credentials.email,password:credentials.password}))
+    // console.log(JSON.stringify({email:credentials.email,password:credentials.password}))
     const response=await fetch(`${process.env.REACT_APP_BACK_URL}/api/login-user`,{
       method:'POST',
       headers:{
@@ -23,12 +30,15 @@ function Login() {
    
 
     if(!json.success){
+     
       alert("Enter Valid Credantials")
     }
     if(json.success){
+    
       localStorage.setItem("userEmail",credentials.email);
       localStorage.setItem("authToken",json.authToken);
       // console.log(localStorage.getItem("authToken"));
+      alert("login successfully logged in");
       navigate("/");
     }
 
