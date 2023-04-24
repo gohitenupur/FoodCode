@@ -8,7 +8,7 @@ export default function MyOrder() {
 
     const fetchMyOrder = async () => {
         // console.log(localStorage.getItem('userEmail'))
-        await fetch(`${process.env.REACT_APP_BACK_URL}/api/myOrderData`, {
+        await fetch("https://backend-4mhl.onrender.com/api/myOrderData", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

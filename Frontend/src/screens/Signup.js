@@ -8,7 +8,7 @@ export default function Signup() {
     const [credentials,setCredentials]=useState({name:"",email:"",password:"",location:""})
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch(`${process.env.REACT_APP_BACK_URL}/api/create-user`,{
+    const response = await fetch("https://backend-4mhl.onrender.com/api/create-user",{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
