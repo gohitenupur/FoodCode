@@ -18,7 +18,7 @@ function Login() {
     e.preventDefault();
 
     // console.log(JSON.stringify({email:credentials.email,password:credentials.password}))
-    const response=await fetch(`${process.env.REACT_APP_BASE_URL}/api/login-user`,{
+    const response=await fetch(`https://foodcode-backend.onrender.com/api/login-user`,{
       method:'POST',
       headers:{
         'Content-Type':'application/json'
