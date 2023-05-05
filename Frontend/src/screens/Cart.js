@@ -18,7 +18,7 @@ function Cart() {
   const handleCheckout = async () => {
     // Implement checkout logic here
     let userEmail = localStorage.getItem("userEmail");
-    let response = await fetch("https://backend-4mhl.onrender.com/api/order-data", {
+    let response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/order-data`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
