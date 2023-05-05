@@ -16,7 +16,7 @@ function Home() {
   const [searchText, setSearchText] = useState("");
 
   const loadData = async () => {
-    let response = await fetch(`https://foodcode-backend.onrender.com/api/food-data`, {
+    let response = await fetch(`http://localhost:5000/api/food-data`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

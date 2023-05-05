@@ -18,7 +18,7 @@ function Cart() {
   const handleCheckout = async () => {
     // Implement checkout logic here
     let userEmail = localStorage.getItem("userEmail");
-    let response = await fetch(`https://foodcode-backend.onrender.com/api/order-data`, {
+    let response = await fetch(`http://localhost:5000/api/order-data`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

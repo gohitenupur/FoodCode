@@ -8,7 +8,7 @@ export default function Signup() {
     const [credentials,setCredentials]=useState({name:"",email:"",password:"",location:""})
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch(`https://foodcode-backend.onrender.com/api/create-user`,{
+    const response = await fetch(`http://localhost:5000/api/create-user`,{
         method:'POST',
         headers:{
             'Content-Type':'application/json'
