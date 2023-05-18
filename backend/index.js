@@ -1,9 +1,12 @@
 const express = require("express")
+const cors = require('cors');
+
 require("dotenv").config();
 const app =express()
 const port =process.env.PORT
 const mongoDB=require("./db");
 mongoDB();
+app.use(cors());
 
 app.use((req,res,next)=>{
     res.setHeader("Access-Control-Allow-Origin","http://localhost:3000");
