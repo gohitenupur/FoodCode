@@ -16,7 +16,7 @@ function Home() {
   const [searchText, setSearchText] = useState("");
 
   const loadData = async () => {
-    let response = await fetch(`http://localhost:5000/api/food-data`, {
+    let response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/food-data`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
