@@ -5,6 +5,7 @@ const router =express.Router()
 router.get("/food-data",(req,res)=>{
     try{
         // console.log(global.foodData);
+        console.log("ckeck data")
         res.send([global.foodData ,global.foodCategory])
         // res.json("data send")
 

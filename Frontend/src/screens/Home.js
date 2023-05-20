@@ -26,7 +26,7 @@ function Home() {
     response = await response.json();
     setFoodData(response[0]);
     setFoodCat(response[1]);
-    // console.log(response[0],response[1]);
+    console.log(response[0],response[1]);
   };
 
   useEffect(() => {
