@@ -32,7 +32,7 @@ function Home() {
   }
   catch(error){
     console.log(`${process.env.REACT_APP_BASE_URL}`)
-    console.log(error.message)
+    console.log("error",error)
   }
   };
 
