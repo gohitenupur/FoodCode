@@ -17,6 +17,7 @@ function Home() {
 
   const loadData = async () => {
     try{
+    
     let response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/food-data`, {
       method: "GET",
       headers: {
@@ -30,6 +31,7 @@ function Home() {
     console.log(response[0],response[1]);
   }
   catch(error){
+    console.log(`${process.env.REACT_APP_BASE_URL}`)
     console.log(error.message)
   }
   };
