@@ -6,11 +6,10 @@ import Login from "./screens/Login";
 import Signup from "./screens/Signup";
 import { CartProvider } from "./components/ContextReuser";
 import MyOrder from "./screens/MyOrder";
+import dotenv from 'dotenv';
+dotenv.config();
 
 function App() {
-
-
-
 
   return (
     <CartProvider>
