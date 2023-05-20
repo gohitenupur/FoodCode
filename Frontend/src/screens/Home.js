@@ -16,6 +16,7 @@ function Home() {
   const [searchText, setSearchText] = useState("");
 
   const loadData = async () => {
+    try{
     let response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/food-data`, {
       method: "GET",
       headers: {
@@ -27,6 +28,10 @@ function Home() {
     setFoodData(response[0]);
     setFoodCat(response[1]);
     console.log(response[0],response[1]);
+  }
+  catch(error){
+    console.log(error.message)
+  }
   };
 
   useEffect(() => {
