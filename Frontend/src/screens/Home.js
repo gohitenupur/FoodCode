@@ -18,7 +18,7 @@ function Home() {
   const loadData = async () => {
     try{
     
-    let response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/food-data`, {
+    let response = await fetch(`https://foodcode-backend.onrender.com/api/food-data`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
